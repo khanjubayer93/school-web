@@ -1,0 +1,18 @@
+.jk-btn {
+  text-decoration: none;
+  background: #ffb607;
+  padding: 0px 34px;
+  height: 54px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #003d69;
+    color: #fff;
+  }
+}
