@@ -23,6 +23,44 @@ $font-roboto-bold: roboto-bold;
 
 $color-white: #fff;
 $color-primary: #ffb607;
+$color-red: #ff002a;
+$color-navy: #003d69;
+$color-sky: #3db2d5;
+$color-green: #3ab64c;
+
+// text color
+.cl-white {
+  color: $color-white;
+}
+.cl-primary {
+  color: $color-primary;
+}
+.cl-red {
+  color: $color-red;
+}
+.cl-navy {
+  color: $color-navy;
+}
+.cl-sky {
+  color: $color-sky;
+}
+
+// bg color
+.bg_primary {
+  background: $color-primary;
+}
+.bg_red {
+  background: $color-red;
+}
+.bg_navy {
+  background: $color-navy;
+}
+.bg_sky {
+  background: $color-sky;
+}
+.bg_green {
+  background: $color-green;
+}
 
 //Media Query
 
