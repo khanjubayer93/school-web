@@ -185,6 +185,36 @@
   .slick-list {
     margin: 0 -15px;
   }
+
+  .slick-arrow {
+    &::before {
+      font-size: 50px;
+    }
+  }
+  .slick-prev {
+    left: -60px;
+  }
+  .slick-next {
+    right: -28px;
+  }
+  .slick-dots {
+    bottom: -50px;
+  }
+  .slick-dots {
+    button:before {
+      color: white;
+      font-size: 10px;
+      opacity: 1;
+    }
+    li {
+      &.slick-active {
+        button:before {
+          color: $color-primary;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 .jk-popular-box {
@@ -233,4 +263,7 @@
       justify-content: space-between;
     }
   }
+}
+
+.ic-popular-section {
 }

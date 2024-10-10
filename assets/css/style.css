@@ -30,6 +30,10 @@
   color: #3db2d5;
 }
 
+.cl-purple {
+  color: #56225e;
+}
+
 .bg_primary {
   background: #ffb607;
 }
@@ -378,7 +382,7 @@
   overflow: hidden;
 }
 
-.ic-bg-img {
+.ic-bg-style {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -534,6 +538,7 @@ h1, h1 span {
 h2, h2 span {
   font-size: 48px;
   line-height: 120%;
+  font-weight: 700;
 }
 h3, h3 span {
   font-size: 28px;
@@ -779,6 +784,27 @@ li {
 }
 .popular-slider .slick-list {
   margin: 0 -15px;
+}
+.popular-slider .slick-arrow::before {
+  font-size: 50px;
+}
+.popular-slider .slick-prev {
+  left: -60px;
+}
+.popular-slider .slick-next {
+  right: -28px;
+}
+.popular-slider .slick-dots {
+  bottom: -50px;
+}
+.popular-slider .slick-dots button:before {
+  color: white;
+  font-size: 10px;
+  opacity: 1;
+}
+.popular-slider .slick-dots li.slick-active button:before {
+  color: #ffb607;
+  font-size: 18px;
 }
 
 .jk-popular-box .img-box img {
