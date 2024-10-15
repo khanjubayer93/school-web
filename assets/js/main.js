@@ -18,4 +18,8 @@
     slidesToShow: 3,
     slidesToScroll: 1,
   });
+
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
 })(jQuery);

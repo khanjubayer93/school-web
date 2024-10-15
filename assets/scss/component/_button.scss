@@ -23,4 +23,9 @@
     background: #003d69;
     color: #fff;
   }
+  &.red {
+    background: $color-red;
+    color: white;
+    border-radius: 50px;
+  }
 }

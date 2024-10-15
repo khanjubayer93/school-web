@@ -28,6 +28,7 @@ $color-navy: #003d69;
 $color-sky: #3db2d5;
 $color-green: #3ab64c;
 $color-purple: #56225e;
+$color-text: #52575e;
 
 // text color
 .cl-white {
@@ -46,6 +47,9 @@ $color-purple: #56225e;
   color: $color-sky;
 }
 .cl-purple {
+  color: $color-purple;
+}
+.cl-text {
   color: $color-purple;
 }
 
