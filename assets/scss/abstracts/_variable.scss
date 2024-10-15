@@ -29,6 +29,8 @@ $color-sky: #3db2d5;
 $color-green: #3ab64c;
 $color-purple: #56225e;
 $color-text: #52575e;
+$color-gray-1: #b2b2b2;
+$color-gray-2: #dadada;
 
 // text color
 .cl-white {
@@ -51,6 +53,9 @@ $color-text: #52575e;
 }
 .cl-text {
   color: $color-purple;
+}
+.cl-gray-2 {
+  color: $color-gray-2;
 }
 
 // bg color

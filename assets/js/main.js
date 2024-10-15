@@ -19,6 +19,15 @@
     slidesToScroll: 1,
   });
 
+  $(".testimonial-slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
   Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
