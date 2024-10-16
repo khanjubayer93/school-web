@@ -1086,4 +1086,78 @@ li {
   bottom: 0;
 }
 
+.jr-blog-wrap .jk-popular-box {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.jr-blog-wrap .jk-popular-box:hover {
+  box-shadow: 0px 7px 26px -9px rgb(54, 54, 54);
+}
+
+.jr-footer-top {
+  background: #ff002a;
+}
+
+.jr-footer-top-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  color: white;
+}
+.jr-footer-top-content-wrap .top-right form {
+  display: flex;
+}
+.jr-footer-top-content-wrap .top-right form input {
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px 0 0 10px;
+}
+.jr-footer-top-content-wrap .top-right form button {
+  background: #000;
+  padding: 0px 20px;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: 600;
+}
+
+.footer-bottom {
+  background: #222;
+  color: #757575;
+  padding: 20px 0 30px;
+}
+.footer-bottom .footer-links li {
+  margin-bottom: 6px;
+}
+.footer-bottom .footer-links a {
+  color: #757575;
+  transition: all 0.3s;
+  position: relative;
+}
+.footer-bottom .footer-links a::before {
+  position: absolute;
+  content: "";
+  background: white;
+  display: inline-block;
+  width: 12px;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.footer-bottom .footer-links a:hover {
+  color: white;
+  padding-left: 15px;
+}
+.footer-bottom .footer-links a:hover::before {
+  opacity: 1;
+}
+.footer-bottom .unorderList li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
 /*# sourceMappingURL=style.css.map */
