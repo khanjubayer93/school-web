@@ -385,13 +385,13 @@
 
 .testimonial-slider {
   .slick-track {
-    padding-top: 32px;
+    padding: 38px 0px;
   }
   .slick-list {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   .slick-dots {
-    bottom: -100px;
+    bottom: -70px;
   }
   /* the slides */
   .slick-slide {
@@ -402,6 +402,22 @@
   .slick-list {
     margin: 0 -30px;
   }
+  .slick-dots li button:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    text-align: center;
+    opacity: 1;
+    border: 1px solid $color-red;
+    border-radius: 50%;
+  }
+  .slick-dots .slick-active button:before {
+    background: $color-red;
+  }
 }
 .testimonial-slide {
   text-align: center;
@@ -409,6 +425,7 @@
   background: #424761;
   border: 1px solid #424761;
   border-radius: 12px;
+  position: relative;
 
   .testimonial-content {
     margin-top: -68px;
@@ -451,6 +468,52 @@
     i {
       font-size: 38px;
       color: $color-red;
+    }
+  }
+}
+
+// teacher styles
+.jr-teacher-item {
+  box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  .img-box {
+    overflow: hidden;
+    position: relative;
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+  .social-icons {
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+    width: 100%;
+    right: auto;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    opacity: 1;
+    z-index: 9;
+    background-color: rgb(226 12 12 / 80%);
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      color: white;
+    }
+  }
+  .item-content {
+    padding: 15px;
+  }
+  &:hover {
+    border-color: $color-red;
+    .social-icons {
+      bottom: 0;
     }
   }
 }
