@@ -4,11 +4,10 @@
   $(".jk-banner-wrap").slick({
     dots: false,
     infinite: true,
-    speed: 700,
+    speed: 3000,
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    cssEase: "linear",
   });
 
   $(".popular-slider").slick({
@@ -22,10 +21,12 @@
   $(".testimonial-slider").slick({
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1500,
+    autoplaySpeed: 1500,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
   });
 
   Fancybox.bind("[data-fancybox]", {
