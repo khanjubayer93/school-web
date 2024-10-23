@@ -31,6 +31,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media #{$max767} {
+    display: none;
+  }
 }
 .jk-header-search {
   border-right: 1px solid #e8e8e8;
@@ -71,6 +74,17 @@
   }
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand {
+  @media #{$max575} {
+    margin-right: unset;
+  }
+}
+
 // baner
 .banner-slider {
   position: relative;
@@ -91,19 +105,54 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  @media #{$max575} {
+    top: 15%;
+    transform: translateY(-15%);
+  }
   .content {
     text-align: center;
+    @media #{$max575} {
+      padding: 0 12px;
+    }
+    h1 {
+      @media #{$max575} {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+    }
+
     p {
       font-size: 18px;
       font-weight: 700;
       line-height: 32px;
       margin-bottom: 40px;
+
+      @media #{$max575} {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 20px;
+        display: inline;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+      }
     }
     .jk-btn {
       border-radius: 50px;
       text-transform: uppercase;
       height: 60px;
       font-size: 18px;
+      @media #{$max575} {
+        height: 44px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 16px;
+      }
       &:hover {
         background: $color-white;
         color: $color-primary;
@@ -181,15 +230,30 @@
       line-height: 50px;
       font-size: 16px;
       transition: all 0.3s;
+
+      @media #{$max575} {
+        width: 50px;
+        height: 50px;
+      }
       img {
         width: 50px;
         height: 50px;
+        @media #{$max575} {
+          width: 24px;
+          height: 24px;
+        }
       }
       &:hover {
         background: #003d69;
         color: #fff;
       }
     }
+  }
+}
+
+.jk-online-content-left {
+  @media #{$max1199} {
+    text-align: center;
   }
 }
 

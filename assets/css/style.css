@@ -543,6 +543,11 @@ h1, h1 span {
   font-weight: 700;
   line-height: 110%;
 }
+@media only screen and (max-width: 575.98px) {
+  h1, h1 span {
+    font-size: 30px;
+  }
+}
 h2, h2 span {
   font-size: 48px;
   line-height: 120%;
@@ -657,6 +662,11 @@ li {
   align-items: center;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 767.98px) {
+  .jk-btn-wrap {
+    display: none;
+  }
+}
 
 .jk-header-search {
   border-right: 1px solid #e8e8e8;
@@ -699,6 +709,18 @@ li {
   }
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .navbar-brand {
+    margin-right: unset;
+  }
+}
+
 .banner-slider {
   position: relative;
 }
@@ -716,8 +738,25 @@ li {
   top: 50%;
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 575.98px) {
+  .banner-content-wrap {
+    top: 15%;
+    transform: translateY(-15%);
+  }
+}
 .banner-content-wrap .content {
   text-align: center;
+}
+@media only screen and (max-width: 575.98px) {
+  .banner-content-wrap .content {
+    padding: 0 12px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .banner-content-wrap .content h1, .banner-content-wrap .content h1 span, h1 .banner-content-wrap .content span {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
 }
 .banner-content-wrap .content p {
   font-size: 18px;
@@ -725,11 +764,34 @@ li {
   line-height: 32px;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 575.98px) {
+  .banner-content-wrap .content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: inline;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+}
 .banner-content-wrap .content .jk-btn {
   border-radius: 50px;
   text-transform: uppercase;
   height: 60px;
   font-size: 18px;
+}
+@media only screen and (max-width: 575.98px) {
+  .banner-content-wrap .content .jk-btn {
+    height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 16px;
+  }
 }
 .banner-content-wrap .content .jk-btn:hover {
   background: #fff;
@@ -799,13 +861,31 @@ li {
   font-size: 16px;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 575.98px) {
+  .jk-online-content-right .jk-content-list .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 .jk-online-content-right .jk-content-list .icon img {
   width: 50px;
   height: 50px;
 }
+@media only screen and (max-width: 575.98px) {
+  .jk-online-content-right .jk-content-list .icon img {
+    width: 24px;
+    height: 24px;
+  }
+}
 .jk-online-content-right .jk-content-list .icon:hover {
   background: #003d69;
   color: #fff;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .jk-online-content-left {
+    text-align: center;
+  }
 }
 
 .section-title {

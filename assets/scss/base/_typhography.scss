@@ -17,6 +17,10 @@ h1 {
   font-weight: 700;
   line-height: 110%;
 
+  @media #{$max575} {
+    font-size: 30px;
+  }
+
   span {
     @extend h1;
   }
