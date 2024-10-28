@@ -1,7 +1,7 @@
 (function ($) {
   ("use strict");
 
-  $(".jk-banner-wrap").slick({
+  $(".jk-banner-slider").slick({
     dots: false,
     infinite: true,
     speed: 3000,
@@ -16,6 +16,22 @@
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".testimonial-slider").slick({

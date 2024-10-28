@@ -87,28 +87,27 @@
 
 // baner
 .banner-slider {
+}
+.jk-slide-item {
   position: relative;
-
+  padding: 200px 0 300px 0;
+  background-image: url("../../../assets/images/banner-slider1.png");
   &::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    background: #000;
-    opacity: 0.7;
+    background: rgba(0, 0, 0, 0.283);
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 }
-// .jk-slide-item {
-//   position: relative;
-// }
 .banner-content-wrap {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  z-index: 9;
 
   @media #{$max575} {
-    top: 15%;
-    transform: translateY(-15%);
   }
   .content {
     text-align: center;
@@ -794,5 +793,37 @@
         color: $color-red;
       }
     }
+  }
+}
+
+// anim
+
+/* Apply this CSS to the element you want to animate */
+.loader {
+  border: 100px solid #f3f3f3;
+  // border-radius: 50%;
+  border-top: 100px solid blue;
+  border-bottom: 100px solid blue;
+  width: 500px;
+  height: 500px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
